@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak Sawadee Kitchen</title>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-image: url(Gambar/a4e34526-9cc3-4c79-979d-bc089366152c.jpeg);
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #cd0c0c;
+      text-align: center;
+      padding: 40px 20px;
+      border-bottom: 3px solid #f9f7f3;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      margin: 0;
+      color: #fcf9f9;
+    }
+    header p {
+      margin-top: 8px;
+      color: #777;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px;
+    }
+    .contact-info, .contact-form {
+      flex: 1 1 350px;
+      background: #faf8f8;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08)
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      color: #990b08;
+    }
+    .contact-info p {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, textarea {
+      margin-top: 6px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #ad0f09c8;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #a67c00;
+    }
+  
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sawadee Kitchen</h1>
+  </header>
+
+  <div class="container">
+    <div class="contact-info">
+      <h2>Informasi Kontak</h2>
+      <p><strong>Alamat:</strong><br>Jl. Mawar No. 88, Jakarta Pusat</p>
+      <p><strong>Telepon:</strong> <a href="tel:+62211234567">(+62) 897 123-4567</a></p>
+      <p><strong>Email:</strong> <a href="mailto:info@sawadeekitchen.id">info@sawadeekitchen.id</a></p>
+      <p><strong>Jam Buka:</strong><br>Senin - Minggu: 11.00 - 22.00 WIB</p>
+      <p><a href="Beranda.html">Beranda</a></p>
+      <p><a href="Daftar Menu.html">Daftar Menu</a></p>
+      <p><a href="Order.html">Order</a></p>
+      <p><a href="Resep.html">Resep</a></p>
+      <p><a href="tentang.html">Tentang</a></p>
+    </div>
+    
+
+    <div class="contact-form">
+      <h2>Hubungi Kami</h2>
+      <form onsubmit="alert('Terima kasih! Pesan Anda telah terkirim.'); return false;">
+        <label for="name">Nama Lengkap</label>
+        <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+
+        <label for="email">Alamat Email</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+
+        <label for="message">Pesan</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

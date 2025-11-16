@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restoran Thailand - Sawadee Thai</title>
+  <style>
+   body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url(Gambar/download.jpeg);
+      color:#0f0f0f;
+    }
+
+    header {
+      background-color: #cd1c1c;
+      color: rgb(247, 241, 241);
+      text-align: center;
+      padding: 25px 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    p {
+      background-color: white;
+      color: rgb(30, 29, 29);
+      margin: 5px 0 0;
+      font-size: 1.1rem;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 2px 10px rgba(216, 208, 208, 0.1);
+      margin-bottom: 30px;
+    }
+
+
+  .container {
+    background-color: rgba(255, 255, 255, 0.92);
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
+
+     nav a{
+      text-decoration:none;color:#333;font-weight:600;margin-left:20px;transition:.3s;
+    }
+
+    nav a:hover{color:var(--accent)}
+
+    .hero{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      align-items:center;
+      gap:20px;
+      background:var(--card);
+      padding:24px;
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      margin-bottom:40px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .image-banner {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .image-banner img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      background-color: white;
+      color: #0e0e0e;
+      text-align: center;
+      margin-bottom: 0px;
+      box-shadow: #151414;
+    }
+
+    .form-card {
+      background: #f3eded;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 2px 10px rgba(216, 208, 208, 0.1);
+      margin-bottom: 30px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea,
+    input[type="file"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    button {
+      background-color: #da2828;
+      color: rgb(245, 237, 237);
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      margin-top: 15px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 1rem;
+    }
+
+    button:hover {
+      background-color: #c92828;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: rgb(255, 250, 250);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(250, 101, 101, 0.1);
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #b91c1c;
+      color: white;
+    }
+
+    td img {
+      width: 80px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    footer {
+      background-color: #e0cece;
+      color: rgb(54, 51, 51);
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      th, td {
+        font-size: 0.9rem;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>
+        <h1>Sawadee Kitchen</h1>
+      </div>
+      <nav>
+        <a href="Daftar Menu.html" style="color: white;">Daftar Menu</a>
+        <a href="Order.html" style="color: white;">Order</a>
+        <a href="Resep.html" style="color: white;">Resep</a>
+        <a href="tentang.html" style="color: white;">Tentang</a>
+        <a href="Kontak.html" style="color: white;">Kontak</a>
+      </nav>
+  </header>
+
+  <main>
+    <div class="image-banner">
+      
+    </div>
+
+    <h2>Selamat Datang Di Sawedaa Kitchen</h2>
+   <p><span class="highlight">Sawadee Kitchen</span> berdiri sejak tahun <strong>2015</strong> di jantung kota Jakarta. Kami hadir untuk menghadirkan kelezatan kuliner Thailand yang autentik
+       mulai dari <em>Tom Yum</em>, <em>Pad Thai</em>, hingga <em>Mango Sticky Rice</em> yang manis dan menggugah selera.
+       <a href="tentang.html">Informasi lebih lanjut</a></p>
+
+    <div class="form-card">
+      <form>
+        <h3 style="color: rgb(21, 21, 21);"align=center>Daftar Menu Makanan Thailand</h3>
+
+        <label for="nama">Nama Menu:</label>
+        <input type="text" id="nama" name="nama" placeholder="Contoh: Pad Thai" required>
+
+        <label for="deskripsi">Deskripsi Menu:</label>
+        <textarea id="deskripsi" name="deskripsi" rows="3" placeholder="Tuliskan deskripsi singkat menu..." required></textarea>
+
+        <label for="harga">Harga (Rp):</label>
+        <input type="number" id="harga" name="harga" placeholder="Contoh: 45000" required>
+
+        <label for="gambar">Unggah Gambar:</label>
+        <input type="file" id="gambar" name="gambar" accept="image/*">
+
+        <button type="submit">Tambah / Simpan</button>
+      </form>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nama Menu</th>
+          <th>Deskripsi</th>
+          <th>Gambar</th>
+          <th>Harga</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Pad Thai</td>
+          <td>Mie goreng khas Thailand dengan saus kacang dan udang.</td>
+          <td><img src="Gambar/Chicken-Pad-Thai-10-1120x1120.webp" alt="Pad Thai"></td>
+          <td>Rp 145.000</td>
+          <td>Edit | Hapus</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Tom Kha Gai</td>
+          <td> hidangan sup yang kaya rasa, 
+            gurih, sedikit asam, dan harum karena penggunaan rempah-rempah khas Thailand.</td>
+          <td><img src="Gambar/tom-kha-gai-soup-on-260nw-2625474667.webp" alt="Tom Kha Gai"></td>
+          <td>Rp 155.000</td>
+          <td>Edit | Hapus</td>
+        </tr> 
+        <td></td>
+        <td></td>
+        <td><a href="Daftar Menu.html"> Menu lainnya </a></td>
+        <td> <a href="Order.html">Order</a></td>
+        <td></td>
+        <td></td>
+      </tbody>
+    </table>
+
+    <div class="container">
+    <h2 style="color: black;">Kontak Kami</h2>
+    <form>
+        <label for="nama" style="color: rgb(11, 11, 11);">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" placeholder="Contoh: Siti Rahma">
+
+        <label for="email" style="color: rgb(16, 16, 16);">Alamat Email:</label>
+        <input type="email" id="email" name="email" placeholder="Contoh: siti@email.com">
+
+        <label for="subjek" style="color: rgb(8, 8, 8);">Subjek:</label>
+        <input type="text" id="subjek" name="subjek" placeholder="Contoh: Pemesanan Meja">
+
+        <label for="pesan"style="color:black:">Pesan:</label>
+        <textarea id="pesan" name="pesan" placeholder="Tuliskan pesan Anda di sini..."></textarea>
+
+        <button type="submit">Kirim Pesan</button>
+        <p align="center"><a href="Kontak.html">Hubungi Kami</a></p>
+    </form>
+
+  </main>
+
+  <footer>
+    © 2025 Sawadee Kitchen | Jalan Mawar No.88, Jakarta | Buka setiap hari 11.00–22.00
+  </footer>
+
+</body>
+</html>

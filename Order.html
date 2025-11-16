@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Menu Restoran Thailand</title>
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: url(Gambar/WhatsApp\ Image\ 2025-10-27\ at\ 22.55.46_eda8b85c.jpg) no-repeat center center/cover;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #c0392b;
+    color: rgb(249, 248, 248);
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  header h1 {
+    font-size: 2.3rem;
+    margin-bottom: 0.3rem;
+  }
+
+  header p {
+    font-size: 1rem;
+    color: #fcf9f9;
+  }
+
+  .container {
+    max-width: 800px;
+    background-color: white;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
+
+  h2 {
+    color: #c0392b;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  label {
+    font-weight: 600;
+    color: #333;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  textarea,
+  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+
+  textarea {
+    resize: none;
+    height: 70px;
+  }
+
+  .btn {
+    width: 200px;
+    align-self: center;
+    background-color: #d32f2f;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .btn:hover {
+    background-color: #b71c1c;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #ce2626;
+    color: white;
+  }
+
+  td img {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  .aksi-btn {
+    background-color: #f9f4f0;
+    color: rgb(29, 28, 28);
+    border: none;
+    padding: 7px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .aksi-btn:hover {
+    background-color: #ebe8e7;
+  }
+
+  footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Sawadee Kitchen</h1>
+
+    </header>
+
+<div class="container">
+  <h2>Order Menu Makanan</h2>
+  <form>
+    <div>
+      <label for="namaMenu">Nama Menu:</label>
+      <input type="text" id="namaMenu" placeholder="Masukkan nama makanan">
+    </div>
+
+    <div>
+      <label for="deskripsi">Deskripsi Menu:</label>
+      <textarea id="deskripsi" placeholder="Masukkan deskripsi makanan"></textarea>
+    </div>
+
+    <div>
+      <label for="harga">Harga (Rp):</label>
+      <input type="number" id="harga" placeholder="Masukkan harga">
+    </div>
+
+    <div>
+      <label for="gambar">Unggah Gambar:</label>
+      <input type="file" id="gambar">
+    </div>
+
+    <button type="submit" class="btn">Tambah / Simpan</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>Nama Menu</th>
+        <th>Deskripsi</th>
+        <th>Gambar</th>
+        <th>Harga</th>
+        <th>Aksi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Pad Thai</td>
+        <td>Mie khas Thailand dengan udang, tauge dan saus kacang .</td>
+        <td><img src="Gambar/Chicken-Pad-Thai-10-1120x1120.webp" alt="Pad Thai"></td>
+        <td>Rp 145.000</td>
+        <td>
+          <button class="aksi-btn">Edit</button>
+          <button class="aksi-btn">Hapus</button>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Tom Yum Goong</td>
+        <td>Sup pedas-asam khas Thailand dengan udang, serai, dan daun jeruk purut.</td>
+        <td><img src="Gambar/istockphoto-1392660302-612x612.jpg" alt="Tom Yum Goong"></td>
+        <td>Rp 160.000</td>
+        <td><button class="aksi-btn">Edit</button>
+          <button class="aksi-btn">Hapus</button> </td>
+        <tr>
+          <td></td>
+          <td><a href="Beranda.html">Beranda</a></td>
+          <td><a href="Daftar Menu.html">Lihat Daftar Menu</a></td>
+          <td><a href="Resep.html">Resep</a></td>
+          <td><a href="Kontak.html">Kontak</a></td>
+          <td> <a href="tentang.html">Tentang</a></td>
+          <td></td>
+        </tr>
+      </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<footer>
+ © 2025 Sawadee Kitchen | Jalan Mawar No.88, Jakarta | Buka setiap hari 11.00–22.00
+</footer>
+
+</body>
+</html>
